@@ -62,7 +62,7 @@ func TestLogger(t *testing.T) {
 }
 
 func TestLogLevelEnv(t *testing.T) {
-	os.Setenv("DATAHUB_LOGLEVEL", "fatal")
+	os.Setenv("CLOG_LOGLEVEL", "fatal")
 	checkLogEnv()
 	lvl := GetLogLevel()
 	expect(t, lvl, LOG_LEVEL_FATAL)
