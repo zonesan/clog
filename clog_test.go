@@ -31,6 +31,8 @@ func TestLog(t *testing.T) {
 	Warn(logstr, logstr2)
 	Trace(logstr, logstr2)
 	Println(logstr, logstr2)
+	Print(logstr, logstr2)
+	expect(t, GetLogLevelText(), "debug")
 	t.Log("TEST OK")
 
 }
